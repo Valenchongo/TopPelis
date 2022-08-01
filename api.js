@@ -2,6 +2,7 @@ contenedor = document.getElementById("contenedor");
 siguiente = document.querySelector(".sig");
 anterior = document.querySelector(".ant");
 botoness = document.querySelector(".botones");
+
 pag = 1;
 botones = [];
 descrip=[];
@@ -74,36 +75,68 @@ cargarpelis = async ()=>{
     contenedor.innerHTML = `
     <img src="https://image.tmdb.org/t/p/w500/${img[1]}" class="img" > 
     <h3 class="descri">${descrip[1]}</h3>
+    <button class="volver"> back </button>
 `
    botoness.style.display = "none"
    contenedor.style.flexDirection = "column"
+   back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton2.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[2]}"> 
     <h3 class="descri">${descrip[2]}</h3>
+    <button class="volver"> back </button>
 `
    botoness.style.display = "none"
    contenedor.style.flexDirection = "column"
+   back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton3.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[3]}"> 
     <h3 class="descri">${descrip[3]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton4.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[4]}"> 
     <h3 class="descri">${descrip[4]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
 
    })
 
@@ -111,144 +144,272 @@ contenedor.style.flexDirection = "column"
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[5]}"> 
     <h3 class="descri">${descrip[5]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton6.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[6]}"> 
     <h3 class="descri">${descrip[6]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton7.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[7]}"> 
     <h3 class="descri">${descrip[7]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton8.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[8]}"> 
     <h3 class="descri">${descrip[8]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton9.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[9]}"> 
     <h3 class="descri">${descrip[9]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton10.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[10]}"> 
     <h3 class="descri">${descrip[10]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton11.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[11]}"> 
     <h3 class="descri">${descrip[11]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton12.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[12]}"> 
     <h3 class="descri">${descrip[12]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton13.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[13]}"> 
     <h3 class="descri">${descrip[13]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton14.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[14]}"> 
     <h3 class="descri">${descrip[14]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton15.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[15]}"> 
     <h3 class="descri">${descrip[15]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton16.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[16]}"> 
     <h3 class="descri">${descrip[16]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton17.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[17]}"> 
     <h3 class="descri">${descrip[17]}</h3>
+    <button class="volver"> back </button>
 `
  botoness.style.display = "none"
  contenedor.style.flexDirection = "column"
+ back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton18.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[18]}"> 
     <h3 class="descri">${descrip[18]}</h3>
+    <button class="volver"> back </button>
 `
 botoness.style.display = "none"
 contenedor.style.flexDirection = "column"
+back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton19.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[19]}"> 
     <h3 class="descri">${descrip[19]}</h3>
+    <button class="volver"> back </button>
 `
   botoness.style.display = "none"
   contenedor.style.flexDirection = "column"
+  back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
    boton20.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[20]}"> 
     <h3 class="descri">${descrip[20]}</h3>
+    <button class="volver"> back </button>
 `
   botoness.style.display = "none"
   contenedor.style.flexDirection = "column"
+  back = document.querySelector(".volver");
+   back.addEventListener("click",()=>{
+    contenedor.innerHTML = "";
+    botoness.style.display = "flex"
+    contenedor.style.flexDirection = "row"
+    cargarpelis();
+   })
    })
 
   }catch(error){
