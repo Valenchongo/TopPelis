@@ -7,6 +7,7 @@ pag = 1;
 botones = [];
 descrip=[];
 img = [];
+puntaje = [];
 
 
 
@@ -44,9 +45,10 @@ cargarpelis = async ()=>{
     <h3 class="title"> ${element.title}</h3>
   </div>
  ` 
- 
+ console.log(element.vote_average)
  img[p] =`${element.poster_path}`;
- descrip[p] = `${element.overview}`
+ descrip[p] = `${element.overview}`;
+ puntaje[p] = `${element.vote_average}`
  p++;
    });
   
@@ -72,7 +74,7 @@ cargarpelis = async ()=>{
    boton20 = document.querySelector(".s20");
 
    boton1.addEventListener("click",()=>{
-    contenedor.innerHTML = `
+    contenedor.innerHTML = `<h4> ${puntaje[1]} / 10</h4>
     <img src="https://image.tmdb.org/t/p/w500/${img[1]}" class="img" > 
     <h3 class="descri">${descrip[1]}</h3>
     <button class="volver"> back </button>
@@ -90,6 +92,7 @@ cargarpelis = async ()=>{
 
    boton2.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[2]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[2]}"> 
     <h3 class="descri">${descrip[2]}</h3>
     <button class="volver"> back </button>
@@ -107,6 +110,7 @@ cargarpelis = async ()=>{
 
    boton3.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[3]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[3]}"> 
     <h3 class="descri">${descrip[3]}</h3>
     <button class="volver"> back </button>
@@ -124,6 +128,7 @@ back = document.querySelector(".volver");
 
    boton4.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[4]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[4]}"> 
     <h3 class="descri">${descrip[4]}</h3>
     <button class="volver"> back </button>
@@ -142,6 +147,7 @@ back = document.querySelector(".volver");
 
    boton5.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[5]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[5]}"> 
     <h3 class="descri">${descrip[5]}</h3>
     <button class="volver"> back </button>
@@ -159,6 +165,7 @@ back = document.querySelector(".volver");
 
    boton6.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[6]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[6]}"> 
     <h3 class="descri">${descrip[6]}</h3>
     <button class="volver"> back </button>
@@ -176,6 +183,7 @@ back = document.querySelector(".volver");
 
    boton7.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[7]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[7]}"> 
     <h3 class="descri">${descrip[7]}</h3>
     <button class="volver"> back </button>
@@ -193,6 +201,7 @@ back = document.querySelector(".volver");
 
    boton8.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[8]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[8]}"> 
     <h3 class="descri">${descrip[8]}</h3>
     <button class="volver"> back </button>
@@ -210,6 +219,7 @@ back = document.querySelector(".volver");
 
    boton9.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[9]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[9]}"> 
     <h3 class="descri">${descrip[9]}</h3>
     <button class="volver"> back </button>
@@ -227,6 +237,7 @@ back = document.querySelector(".volver");
 
    boton10.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[10]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[10]}"> 
     <h3 class="descri">${descrip[10]}</h3>
     <button class="volver"> back </button>
@@ -244,6 +255,7 @@ back = document.querySelector(".volver");
 
    boton11.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[11]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[11]}"> 
     <h3 class="descri">${descrip[11]}</h3>
     <button class="volver"> back </button>
@@ -261,6 +273,7 @@ back = document.querySelector(".volver");
 
    boton12.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[12]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[12]}"> 
     <h3 class="descri">${descrip[12]}</h3>
     <button class="volver"> back </button>
@@ -278,6 +291,7 @@ back = document.querySelector(".volver");
 
    boton13.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[13]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[13]}"> 
     <h3 class="descri">${descrip[13]}</h3>
     <button class="volver"> back </button>
@@ -295,6 +309,7 @@ back = document.querySelector(".volver");
 
    boton14.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[14]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[14]}"> 
     <h3 class="descri">${descrip[14]}</h3>
     <button class="volver"> back </button>
@@ -312,6 +327,7 @@ back = document.querySelector(".volver");
 
    boton15.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[15]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[15]}"> 
     <h3 class="descri">${descrip[15]}</h3>
     <button class="volver"> back </button>
@@ -329,6 +345,7 @@ back = document.querySelector(".volver");
 
    boton16.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[16]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[16]}"> 
     <h3 class="descri">${descrip[16]}</h3>
     <button class="volver"> back </button>
@@ -346,6 +363,7 @@ back = document.querySelector(".volver");
 
    boton17.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[17]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[17]}"> 
     <h3 class="descri">${descrip[17]}</h3>
     <button class="volver"> back </button>
@@ -363,6 +381,7 @@ back = document.querySelector(".volver");
 
    boton18.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[18]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[18]}"> 
     <h3 class="descri">${descrip[18]}</h3>
     <button class="volver"> back </button>
@@ -380,6 +399,7 @@ back = document.querySelector(".volver");
 
    boton19.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[19]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[19]}"> 
     <h3 class="descri">${descrip[19]}</h3>
     <button class="volver"> back </button>
@@ -397,6 +417,7 @@ back = document.querySelector(".volver");
 
    boton20.addEventListener("click",()=>{
     contenedor.innerHTML = `
+    <h4> ${puntaje[20]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[20]}"> 
     <h3 class="descri">${descrip[20]}</h3>
     <button class="volver"> back </button>
