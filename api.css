@@ -38,7 +38,8 @@ body{
 
 }
 .title{
-    margin-left: 20px;
+    margin: auto;
+    margin-top: 20px;
     width: 150px;
 }
 
@@ -207,7 +208,7 @@ button:hover{
 }
 
 .title{
-    
+    margin: auto;
     width: 300px;
 }
 
