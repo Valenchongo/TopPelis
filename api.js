@@ -94,6 +94,7 @@ cargarpelis = async ()=>{
     <h3 class="descri">${descrip[3]}</h3>
 `
 botoness.style.display = "none"
+contenedor.style.flexDirection = "column"
    })
 
    boton4.addEventListener("click",()=>{
