@@ -8,6 +8,7 @@ botones = [];
 descrip=[];
 img = [];
 puntaje = [];
+fecha = [];
 
 
 
@@ -45,10 +46,12 @@ cargarpelis = async ()=>{
     <h3 class="title"> ${element.title}</h3>
   </div>
  ` 
- console.log(element.vote_average)
+ console.log(element.release_date)
  img[p] =`${element.poster_path}`;
  descrip[p] = `${element.overview}`;
  puntaje[p] = `${element.vote_average}`
+ fecha[p] = `${element.release_date}`
+
  p++;
    });
   
@@ -77,6 +80,7 @@ cargarpelis = async ()=>{
     contenedor.innerHTML = `<h4> ${puntaje[1]} / 10</h4>
     <img src="https://image.tmdb.org/t/p/w500/${img[1]}" class="img" > 
     <h3 class="descri">${descrip[1]}</h3>
+    <h3 class = "fecha">${fecha[1]} </h3>  
     <button class="volver"> back </button>
 `
    botoness.style.display = "none"
@@ -93,8 +97,10 @@ cargarpelis = async ()=>{
    boton2.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <h4> ${puntaje[2]} / 10</h4>
-    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[2]}"> 
+    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[2]}">
     <h3 class="descri">${descrip[2]}</h3>
+    <h3 class = "fecha">${fecha[2]} </h3> 
+
     <button class="volver"> back </button>
 `
    botoness.style.display = "none"
@@ -111,8 +117,10 @@ cargarpelis = async ()=>{
    boton3.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <h4> ${puntaje[3]} / 10</h4>
-    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[3]}"> 
+    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[3]}">
     <h3 class="descri">${descrip[3]}</h3>
+    <h3 class = "fecha">${fecha[3]} </h3>  
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -131,6 +139,7 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[4]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[4]}"> 
     <h3 class="descri">${descrip[4]}</h3>
+    <h3 class = "fecha">${fecha[4]} </h3> 
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -150,6 +159,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[5]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[5]}"> 
     <h3 class="descri">${descrip[5]}</h3>
+    <h3 class = "fecha">${fecha[5]} </h3> 
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -168,6 +179,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[6]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[6]}"> 
     <h3 class="descri">${descrip[6]}</h3>
+    <h3 class = "fecha">${fecha[6]} </h3> 
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -186,6 +199,7 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[7]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[7]}"> 
     <h3 class="descri">${descrip[7]}</h3>
+    <h3 class = "fecha">${fecha[7]} </h3> 
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -204,6 +218,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[8]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[8]}"> 
     <h3 class="descri">${descrip[8]}</h3>
+    <h3 class = "fecha">${fecha[8]} </h3> 
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -222,6 +238,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[9]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[9]}"> 
     <h3 class="descri">${descrip[9]}</h3>
+    <h3 class = "fecha">${fecha[9]} </h3> 
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -238,8 +256,9 @@ back = document.querySelector(".volver");
    boton10.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <h4> ${puntaje[10]} / 10</h4>
-    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[10]}"> 
+    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[10]}">
     <h3 class="descri">${descrip[10]}</h3>
+    <h3 class = "fecha">${fecha[10]} </h3>  
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -258,6 +277,7 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[11]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[11]}"> 
     <h3 class="descri">${descrip[11]}</h3>
+    <h3 class = "fecha">${fecha[11]} </h3>  
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -276,6 +296,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[12]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[12]}"> 
     <h3 class="descri">${descrip[12]}</h3>
+    <h3 class = "fecha">${fecha[12]} </h3>  
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -294,6 +316,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[13]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[13]}"> 
     <h3 class="descri">${descrip[13]}</h3>
+    <h3 class = "fecha">${fecha[13]} </h3>  
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -312,6 +336,8 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[14]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[14]}"> 
     <h3 class="descri">${descrip[14]}</h3>
+    <h3 class = "fecha">${fecha[14]} </h3>  
+
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -328,8 +354,9 @@ back = document.querySelector(".volver");
    boton15.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <h4> ${puntaje[15]} / 10</h4>
-    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[15]}"> 
+    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[15]}">
     <h3 class="descri">${descrip[15]}</h3>
+    <h3 class = "fecha">${fecha[15]} </h3>   
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -348,6 +375,7 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[16]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[16]}"> 
     <h3 class="descri">${descrip[16]}</h3>
+    <h3 class = "fecha">${fecha[16]} </h3>  
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -366,6 +394,7 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[17]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[17]}"> 
     <h3 class="descri">${descrip[17]}</h3>
+    <h3 class = "fecha">${fecha[17]} </h3>  
     <button class="volver"> back </button>
 `
  botoness.style.display = "none"
@@ -382,8 +411,9 @@ back = document.querySelector(".volver");
    boton18.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <h4> ${puntaje[18]} / 10</h4>
-    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[18]}"> 
+    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[18]}">
     <h3 class="descri">${descrip[18]}</h3>
+    <h3 class = "fecha">${fecha[18]} </h3>   
     <button class="volver"> back </button>
 `
 botoness.style.display = "none"
@@ -402,6 +432,7 @@ back = document.querySelector(".volver");
     <h4> ${puntaje[19]} / 10</h4>
     <img class="img" src="https://image.tmdb.org/t/p/w500/${img[19]}"> 
     <h3 class="descri">${descrip[19]}</h3>
+    <h3 class = "fecha">${fecha[19]} </h3>  
     <button class="volver"> back </button>
 `
   botoness.style.display = "none"
@@ -418,8 +449,10 @@ back = document.querySelector(".volver");
    boton20.addEventListener("click",()=>{
     contenedor.innerHTML = `
     <h4> ${puntaje[20]} / 10</h4>
-    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[20]}"> 
+    <img class="img" src="https://image.tmdb.org/t/p/w500/${img[20]}">
     <h3 class="descri">${descrip[20]}</h3>
+    <h3 class = "fecha">${fecha[20]} </h3>   
+
     <button class="volver"> back </button>
 `
   botoness.style.display = "none"
