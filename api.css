@@ -22,6 +22,7 @@ body{
     width: 150px;
     height:200px;
     border-radius: 10px;
+    align-self: center;
     
 }
 .contenedorpelicula{
@@ -35,7 +36,7 @@ body{
 
 }
 .title{
-   
+   margin-left: 20px;
     width: 150px;
 }
 
@@ -134,7 +135,7 @@ header{
 }
 
 .contenedorpelicula{
-    margin-bottom: 130px;
+    margin-bottom: 150px;
     height: 250px;
     width: 300px;
     justify-content: space-between;
@@ -239,3 +240,4 @@ header{
     margin-top: 30px;
 }
 }
+
